@@ -97,3 +97,7 @@ button:focus {
 .red {
     color: red;
 }
+
+.btn-block {
+    padding: 12px 0;
+}

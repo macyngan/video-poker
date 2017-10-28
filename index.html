@@ -11,12 +11,12 @@
 <body ng-app="myApp">
     <div class="container" ng-controller="loadDeck">
         <div class="row">
-            <div class="col-md-offset-10">
+            <div class="col-md-2 col-md-offset-9">
                 <div ng-show="gamePlaying" ng-click="go()">
-                    <button class="btn btn-warning btn-lg">Go</button>
+                    <button class="btn btn-warning btn-block">Go</button>
                 </div>
                 <div ng-hide="gamePlaying" ng-click="deal()">
-                    <button class="btn btn-warning btn-lg" ng-disabled="gameSubmitted">Deal</button>
+                    <button class="btn btn-warning btn-block" ng-disabled="gameSubmitted">Deal</button>
                 </div>
             </div>
         </div>
