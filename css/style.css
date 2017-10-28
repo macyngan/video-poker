@@ -1,0 +1,99 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url("../images/poker-table-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    color: #00B7FF;
+}
+
+.card-container {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 280px;
+    font: 60px 'Trebuchet MS';
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(240, 240, 240, 0.2), 0 6px 20px 0 rgba(240, 240, 240, 0.2);
+}
+
+.msg-banner {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.msg {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+button {
+    outline: none !important;
+}
+
+button:focus {
+    outline:none !important;
+}
+
+.keep-option {
+    font-size: 20px;
+    color: #686868;
+}
+
+.pattern {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.covered-card {
+    background-image: url("../images/poker-back-red.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-inner{
+    height: 250px;
+}
+
+.uncovered-card > div {
+    border: 2px solid black;
+    margin: 15px 10px 10px 10px;
+}
+
+.gray-out-card {
+    background-color: lightgrey;
+}
+
+.gray-out-card > div {
+    border: 2px solid darkgray;
+    margin: 15px 10px 10px 10px;
+}
+
+.computing-card {
+    background-color: #F5ECCE;
+}
+
+.computing-card > div{
+    border: 2px solid #A4A4A4;
+    margin: 15px 10px 10px 10px;
+}
+
+.red {
+    color: red;
+}

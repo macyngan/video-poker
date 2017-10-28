@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Video Poker</title>
+    <link rel="icon" href="image/favicon.svg" type="image/svg">
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body ng-app="myApp">
+    <div class="container" ng-controller="loadDeck">
+        <div class="row">
+            <div class="col-md-offset-10">
+                <div ng-show="gamePlaying" ng-click="go()">
+                    <button class="btn btn-warning btn-lg">Go</button>
+                </div>
+                <div ng-hide="gamePlaying" ng-click="deal()">
+                    <button class="btn btn-warning btn-lg" ng-disabled="gameSubmitted">Deal</button>
+                </div>
+            </div>
+        </div>
+        <div class="row msg-banner">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-body msg">start game by clicking the Deal button</div>
+                </div>
+            </div>
+        </div>
+        <div class="row card-container">
+            <div class="card" ng-repeat="card in topFiveDisplay" ng-click="toggleCard($index)" ng-class="cardFace">
+                <div class="card-inner">
+                    <div ng-switch="card.suit">
+                        <div ng-switch-when="clubs">
+                            <div class="pattern">{{ card.name }}</div>
+                            <div class="pattern">&clubs;</div>
+                        </div>
+                        <div class="red" ng-switch-when="diamonds">
+                            <div class="pattern">{{ card.name }}</div>
+                            <div class="pattern">&diams;</div>
+                        </div>
+                        <div class="red" ng-switch-when="hearts">
+                            <div class="pattern">{{ card.name }}</div>
+                            <div class="pattern">&hearts;</div>
+                        </div>
+                        <div ng-switch-when="spades">
+                            <div class="pattern">{{ card.name }}</div>
+                            <div class="pattern">&spades;</div>
+                        </div>
+                        <div class="uncover-card" ng-switch-default>
+                            <div class="pattern">???</div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="keep-option">{{ card.keep ? 'keep': '-'}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/vendor/jquery-3.2.1.min.js"></script>
+    <script src="javascript/vendor/bootstrap.min.js"></script>
+    <script src="javascript/vendor/angular.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+</html>
