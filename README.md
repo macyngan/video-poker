@@ -1,4 +1,6 @@
-# video-poker
+# Video Poker
+
+Live Demo: https://macyngan.github.io/video-poker/
 ### Game Rule
 
 1. Press "Deal" button to start game
