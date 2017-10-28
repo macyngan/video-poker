@@ -1,6 +1,9 @@
 # Video Poker
 
 Live Demo: https://macyngan.github.io/video-poker/
+
+![alt text](https://github.com/macyngan/video-poker/blob/master/demo/screenshots/screenshot_01.png "Video Poker Screenshot")
+
 ### Game Rule
 
 1. Press "Deal" button to start game
