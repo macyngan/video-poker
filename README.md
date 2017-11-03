@@ -15,3 +15,10 @@ Live Demo: https://macyngan.github.io/video-poker/
 * Straight (500 points): Five cards of consecutive rank. Example: 8♠️ 9♠️ 10♦️ J♥️ Q♦️
 * Pair (100 points): Two cards of the same rank. Example: 8♣️ 8♦️
 * Zero (0 point): None of the above conditions are met.
+
+Tech Stack:
+* AngularJS
+* Javascript
+* Bootstrap
+* CSS
+* HTML
