@@ -16,7 +16,7 @@ Live Demo: https://macyngan.github.io/video-poker/
 * Pair (100 points): Two cards of the same rank. Example: 8♣️ 8♦️
 * Zero (0 point): None of the above conditions are met.
 
-Tech Stack:
+#### Tech Stack:
 * AngularJS
 * Javascript
 * Bootstrap
